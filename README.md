@@ -1,2 +1,2 @@
 # recall
-revision of html ,css,js
+revision of html ,css and js
