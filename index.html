@@ -6,163 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/7c7348f783.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-
-        }
-
-        body {
-            background-color: aquamarine;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-
-        }
-
-        .container {
-            /* background-color: rgb(241, 153, 11); */
-            background: rgb(212, 97, 18);
-            background: linear-gradient(90deg, rgba(212, 97, 18, 1) 0%, rgba(191, 19, 204, 1) 35%, rgba(203, 235, 19, 1) 100%);
-            margin: 165px;
-            height: 500px;
-            width: 450px;
-            text-align: center;
-            border-radius: 25px;
-            overflow: hidden;
-
-        }
-
-        li {
-            list-style: none;
-            font-size: 25px;
-        }
-
-        li:hover {
-            scale: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        img {
-            height: 125px;
-            border-radius: 100%;
-            /* padding-bottom: 10px; */
-            box-shadow: -5px 0px 20px white;
-        }
-
-        ul {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 100px;
-            box-shadow: 1px 1px 5px;
-            margin: 10px 0px;
-            background-color: whitesmoke;
-
-        }
-
-        h3 {
-            padding: 15px;
-            font-size: 35px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-
-        h6 {
-            font-size: 25px;
-            padding: 10px;
-            /* font-weight: bold; */
-            font-style: italic;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .html {
-            width: 0%;
-            height: 20px;
-            background-color: lightslategrey;
-            border: 1px solid black;
-            margin: 5px 0px;
-            font-weight: bold;
-            animation: html 2s linear 1s forwards;
-        }
-
-        .css {
-            width: 0%;
-            height: 20px;
-            background-color: lightslategrey;
-            border: 1px solid black;
-            margin: 5px 0px;
-            font-weight: bold;
-            animation: css 2s linear 1s forwards;
-        }
-
-
-
-        .js {
-            width: 0%;
-            height: 20px;
-            background-color: lightslategrey;
-            border: 1px solid black;
-            margin: 5px 0px;
-            font-weight: bold;
-            animation: js 2s linear 1s forwards;
-        }
-
-
-        .upperContainer {
-            display: block;
-            justify-content: space-around;
-            align-items: center;
-            padding: 25px;
-        }
-
-        .value {
-            position: absolute;
-            right: 50%;
-        }
-
-        @keyframes html {
-            from {
-                width: 0%;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes css {
-            from {
-                width: 0%;
-            }
-
-            to {
-                width: 80%;
-            }
-        }
-
-        @keyframes js {
-            from {
-                width: 0%;
-            }
-
-            to {
-                width: 90%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
+        <div class="wrapper">
+        <div class="holder">
+        <div class="toggleContainer">
+            <div id="toggle">
+                
+            </div>
+        </div>
         <div class="container">
             <h3>Profile</h3>
             <div class="upperContainer">
-                <img src="/8865851.jpg" alt="Monkey D Lufy">
+                <img src="/recall/8865851.jpg" alt="Monkey D Lufy">
 
             </div>
             <div class="lowerContainer">
@@ -191,7 +50,26 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="btnHolder">
+    <button type="button" id="create" > Create</button>
+</div>
+</div>
+<div class="pop-up">
+    <form action="" class="form">
+        <button type="button" id="form-exit">X</button>
+        <label class="form-inner"  for="">Enter your name</label>
+        <input class="form-inner"  type="text" name="" id="">
+        <br>
+        <label class="form-inner"  for="">Enter Role</label>
+        <input class="form-inner"  type="text" name="" id="">
+        <br>
+        <label class="form-inner"  for="">Enter number of skills</label>
+        <input class="form-inner"  type="number" name="" id="skills">
+    </form>
+</div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
