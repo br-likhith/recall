@@ -25,8 +25,8 @@
 
             </div>
             <div class="lowerContainer">
-                <h6>Lucy</h6>
-                <h6>Front-end Devolper</h6>
+                <h6 id="disname">Lucy</h6>
+                <h6 id="disrole">Front-end Devolper</h6>
                 <ul>
                     <li> <a href="https://www.whatsapp.com/" target="_blank" class="fa-brands fa-whatsapp"
                             style="color: #55e916;"> </a> </li>
@@ -39,15 +39,10 @@
 
             </div>
             <div class="skills">
-                <div class="html">
-                    <div class="value">HTML</div>
-                </div>
-                <div class="css">
-                    <div class="value">CSS</div>
-                </div>
-                <div class="js">
-                    <div class="value">Java Script</div>
-                </div>
+                <!-- <div class="html"> HTML </div> -->
+                <!-- <div class="css"> CSS </div> -->
+                <!-- <div class="js"> Java Sript </div> -->
+                
             </div>
         </div>
     </div>
@@ -58,14 +53,18 @@
 <div class="pop-up">
     <form action="" class="form">
         <button type="button" id="form-exit">X</button>
-        <label class="form-inner"  for="">Enter your name</label>
-        <input class="form-inner"  type="text" name="" id="">
+        <label class="form_inner"  for="">Enter your name</label>
+        <input class="form_inner"  type="text" name="" id="name">
         <br>
-        <label class="form-inner"  for="">Enter Role</label>
-        <input class="form-inner"  type="text" name="" id="">
+        <label class="form_inner"  for="">Enter Role</label>
+        <input class="form_inner"  type="text" name="" id="role">
         <br>
-        <label class="form-inner"  for="">Enter number of skills</label>
-        <input class="form-inner"  type="number" name="" id="skills">
+        <label class="form_inner"  for="">Enter number of skills</label>
+        <input class="form_inner"  type="number" name="" id="skills">
+        <br>
+        <div id="submitHolder">
+        <button type="button" id="submit">Submit</button>
+    </div>
     </form>
 </div>
     </main>

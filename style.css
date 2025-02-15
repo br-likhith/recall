@@ -21,7 +21,7 @@ body {
     background: rgb(212, 97, 18);
     background: linear-gradient(90deg, rgba(212, 97, 18, 1) 0%, rgba(191, 19, 204, 1) 35%, rgba(203, 235, 19, 1) 100%);
     margin: 15vh 0px 0px 0px;
-    height: 500px;
+    height: fit-content;
     width: 450px;
     text-align: center;
     border-radius: 25px;
@@ -73,7 +73,7 @@ h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.html {
+.skillValue {
     width: 0%;
     height: 20px;
     background-color: lightslategrey;
@@ -81,7 +81,11 @@ h6 {
     margin: 5px 0px;
     font-weight: bold;
     animation: html 2s linear 1s forwards;
+    animation: css 2s linear 1s forwards;
+    position: static;
+    left: 50%;
 }
+
 
 .css {
     width: 0%;
@@ -91,6 +95,8 @@ h6 {
     margin: 5px 0px;
     font-weight: bold;
     animation: css 2s linear 1s forwards;
+    position: static;
+    left: 50%;
 }
 
 
@@ -103,6 +109,8 @@ h6 {
     margin: 5px 0px;
     font-weight: bold;
     animation: js 2s linear 1s forwards;
+    position: static;
+    left: 50%;
 }
 
 
@@ -142,10 +150,6 @@ top: 10vh;
     min-height: 100px;
 }
 
-.value {
-    position: static;
-    left: 50%;
-}
 
 @keyframes html {
     from {
@@ -201,7 +205,7 @@ top: 10vh;
     padding: 20px;
 }
 
-.form-inner{
+.form_inner{
     margin: 15px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -236,4 +240,18 @@ top: 10vh;
 
 .blur{
     filter: blur(10px);
+}
+
+#submit{
+    background-color: skyblue;
+    margin: 25px;
+    height: 50px;
+    width: 125px;
+    border-radius: 25px;
+    position: relative;
+    left: 30%;
+}
+
+.label1{
+    margin: 44px;
 }
